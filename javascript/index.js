@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Montreal
+  let montrealElement = document.querySelector("#montreal");
+  if (montrealElement) {
+    let montrealDateElement = montrealElement.querySelector(".date");
+    let montrealTimeElement = montrealElement.querySelector(".time");
+    let montrealTime = moment().tz("America/Montreal");
+
+    montrealDateElement.innerHTML = montrealTime.format("MMMM Do YYYY");
+    montrealTimeElement.innerHTML = montrealTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {

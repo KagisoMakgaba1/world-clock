@@ -1,11 +1,17 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://images.pexels.com/photos/707582/pexels-photo-707582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
   font-family: sans-serif;
 }
 
 h1 {
   text-align: center;
   font-size: 36px;
+
   font-family: sans-serif;
 }
 
@@ -44,6 +50,7 @@ select {
 }
 
 .date {
+  color: rgb(59, 54, 55);
   opacity: 0.7;
 }
 
